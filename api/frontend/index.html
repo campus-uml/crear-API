@@ -11,9 +11,9 @@
 
     
 
-    //TRAER VALORES DE ARCHIVO PHP VINCULADO
+    <!-- TRAER VALORES DE ARCHIVO PHP VINCULADO -->
     <script>
-        fetch('http://localhost/api/backend/datos.php') //Captura URL 
+        fetch('http://localhost/crear-API/api/backend/datos.php') //Captura URL 
         .then(datos=>datos.json()) //Transforma los datos en JSON
         .then(datos=>{
             document.getElementById('datos').innerHTML = `
