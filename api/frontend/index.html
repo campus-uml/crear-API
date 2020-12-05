@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API EJEMPLO</title>
+</head>
+<body>
+
+    <h3 id="datos"></h3>
+
+    
+
+    //TRAER VALORES DE ARCHIVO PHP VINCULADO
+    <script>
+        fetch('http://localhost/api/backend/datos.php') //Captura URL 
+        .then(datos=>datos.json()) //Transforma los datos en JSON
+        .then(datos=>{
+            document.getElementById('datos').innerHTML = `
+            Dolar: ${datos.dolar} - Euro: ${datos.euro}
+            `
+        }) 
+
+    </script>
+</body>
+</html>
